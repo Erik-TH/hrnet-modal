@@ -1,11 +1,23 @@
 {
   "name": "hrnet-modal",
+  "description": "Hrnet - modal component",
+  "author": "erik-th",
   "version": "0.1.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "private": false,
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
+  "keywords": [
+    "modal",
+    "react"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erik-TH/hrnet-modal.git"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build-examples": "react-scripts build",
