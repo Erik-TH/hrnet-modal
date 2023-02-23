@@ -1,12 +1,10 @@
-import React from 'react';
-import { render } from "react-dom";
-import { TextInput } from "./lib";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 
-const App = () => (
-  <div style={{ width: 640, margin: "15px auto" }}>
-    <h1>Hello React</h1>
-    <TextInput label="Email Address" placeholder="name@example.com" />
-  </div>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
-
-render(<App />, document.getElementById("root"));

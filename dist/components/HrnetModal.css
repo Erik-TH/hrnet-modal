@@ -1,0 +1,59 @@
+.hrnetModal {
+  background: rgba(189, 189, 189, 0.3);
+  position: fixed;
+  min-height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.hrnetModal__wrapper {
+  min-width: 30rem;
+  max-width: 31rem;
+  padding: 1em 2em;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.hrnetModal__content {
+  display: flex;
+  justify-content: center;
+}
+
+.hrnetModal__content--message {
+  font-size: 1.25rem;
+}
+
+.hrnetModal__btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btn__hrnetModal--close {
+  background-color: rgba(51, 51, 51, 0.05);
+  border-radius: 8px;
+  border-width: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0.6em 1.25em;
+  text-align: center;
+  vertical-align: baseline;
+}

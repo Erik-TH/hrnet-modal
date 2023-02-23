@@ -4,10 +4,10 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "TextInput", {
+Object.defineProperty(exports, "HrnetModal", {
   enumerable: true,
   get: function get() {
-    return _TextInput.default;
+    return _HrnetModal.default;
   }
 });
-var _TextInput = _interopRequireDefault(require("./TextInput"));
+var _HrnetModal = _interopRequireDefault(require("./components/HrnetModal"));

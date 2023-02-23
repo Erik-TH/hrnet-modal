@@ -1,2 +1,3 @@
-import TextInput from "./TextInput";
-export { TextInput };
+import HrnetModal from "./components/HrnetModal";
+
+export { HrnetModal };
