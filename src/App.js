@@ -3,12 +3,12 @@ import { useState } from "react";
 import HrnetModal from "./lib/components/HrnetModal";
 
 function App() {
-  const [openHrnetModal, setOpenHrnetModal] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
 
   const handleModal = (e) => {
     e.preventDefault();
     e.stopPropagation();
-    setOpenHrnetModal((toggle) => !toggle);
+    setOpenModal((toggle) => !toggle);
   };
 
   const hrnetModalMessage = "Test message - hrnetModalMessage";
@@ -18,10 +18,10 @@ function App() {
       <button onClick={handleModal}>Open modal</button>
 
       <HrnetModal
-        openModal={openHrnetModal}
-        setOpenModal={setOpenHrnetModal}
+        openModal={openModal}
+        setOpenModal={setOpenModal}
         hrnetModalMessage={hrnetModalMessage}
-      ></HrnetModal>
+      />
     </div>
   );
 
