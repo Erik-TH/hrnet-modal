@@ -4,13 +4,13 @@ Modal dialog component for ReactJS
 
 To install, you can use [npm](https://npmjs.org/) or [yarn](https://yarnpkg.com):
 
-    $ npm install --save react-modal
-    $ yarn add react-modal
+    $ npm i @erik-th/hrnet-modal
+    $ yarn add @erik-th/hrnet-modal
 
 To use hrnet-modal in a React app:
 
    - In a react app, import the component: 
-   `import { hrnetModal } from "hrnet-modal"`
+   `import { HrnetModal } from "@erik-th/hrnet-modal"`
 
    - Props:
 ```
@@ -29,7 +29,9 @@ Here is  a simple example of hrnet-modal being used:
 ```
 import { useState } from "react";
 import ReactDOM from 'react-dom';
-import HrnetModal from "./HrnetModal";
+
+<!-- import HrnetModal -->
+import { HrnetModal } from "@erik-th/hrnet-modal";
 
 function App() {
   const [openHrnetModal, setOpenHrnetModal] = useState(false);
