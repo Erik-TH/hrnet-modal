@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useEffect, useRef} from "react";
 import "./HrnetModal.css";
 
 const HrnetModal = ({ openModal, setOpenModal, hrnetModalMessage }) => {
+  const ref = useRef();
+
+  useEffect(() => {
+    const close = (e) => {
+      if (e.key === "Escape") {
+        setOpenModal((toggle) => !toggle);
+      }
+    };
+
+    window.addEventListener("keydown", close);
+    return () => window.removeEventListener("keydown", close);
+  }, [openModal]);
+
   const content = (
     <>
       {openModal ? (
