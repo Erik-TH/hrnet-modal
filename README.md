@@ -1,6 +1,5 @@
 # hrnet-modal
 Modal dialog component for ReactJS.
-The modal can be close on esc key.
 ## Installation
 
 To install, you can use [npm](https://npmjs.org/) or [yarn](https://yarnpkg.com):
